@@ -172,3 +172,6 @@
 
 - mobile版本升级后（比如从5.0.6升级到6.5），下载页面显示还是以前的版本
   1. 需要修改EMobileVersion.properties文件。打开ecology/WEB-INF/prop/ EMobileVersion.properties，设置version=Ni4w
+
+- 主次账号切换失败
+  1. 打开ecology/WEB-INF/prop/ EMobile4.properties文件，检查serverUrl是否配置正确。
