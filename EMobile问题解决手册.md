@@ -167,3 +167,8 @@
   3. 检查手机设置是否允许EMobile app消息通知
   4. 检查EMobile app设置——流程消息提醒中是否勾选了对应的流程
   5. 以上都检查无误，则提供推送对应日期的ecology日志（目录ecology/log），EMobile日志（目录EMobile/webapps/ROOT/WEB-INF/logs）和私有云日志（目录e-message/logs）给开发人员排查
+  
+### 7.其他
+
+- mobile版本升级后（比如从5.0.6升级到6.5），下载页面显示还是以前的版本
+  1. 需要修改EMobileVersion.properties文件。打开ecology/WEB-INF/prop/ EMobileVersion.properties，设置version=Ni4w
