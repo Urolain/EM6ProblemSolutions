@@ -175,3 +175,6 @@
 
 - 主次账号切换失败
   1. 打开ecology/WEB-INF/prop/ EMobile4.properties文件，检查serverUrl是否配置正确。
+
+- 网页端登录EMobile显示为空白页面，但是app是可以正常登录
+  1. 这种情况大概率是升级EMobile安全补丁包时没有匹配正确版本而导致的。如果有备份文件，将备份文件目录EMobile\webapps\ROOT\WEB-INF下的page文件夹替换当前使用page文件夹即可。如果没有备份，则联系开发人员处理
